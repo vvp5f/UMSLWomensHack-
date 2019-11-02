@@ -1,3 +1,24 @@
-<p>
-  tutorial works!
-</p>
+<button (click)="toggleVideo(1)">What Is Coding</button>
+<button (click)="toggleVideo(2)">How Programs Work</button>
+<button (click)="toggleVideo(3)">Think Like A Computer</button>
+<button (click)="toggleVideo(4)">Robots For Coding</button>
+
+<div>
+  <div *ngIf="showVideo1">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/THOEQ5soVpY" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div *ngIf="showVideo2">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Nc31NAujTkA" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div *ngIf="showVideo3">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xngWoocXYCo" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </div>
+  <div *ngIf="showVideo4">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hJiEoOvvIlk" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
