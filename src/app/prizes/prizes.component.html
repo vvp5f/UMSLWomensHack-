@@ -1,28 +1,9 @@
-<div class="container">
+<div class="container" style="padding-top: 20px;">
     <div class="row">
-        <div class="col-sm">
-            <img src="assets/img/AppleGiftcard.png" alt="">
-            <h4>$25</h4>
-        </div>
-        <div class="col-sm">
-            <img src="assets/img/ColdStone.png" alt="">
-            <h4>$25</h4>
-        </div>
-        <div class="col-sm">
-            <img src="assets/img/Nike.png" alt="">
-            <h4>$25</h4>
-        </div>
-        <div class="col-sm">
-            <img src="assets/img/Camera.png" alt="">
-            <h4>$69</h4>
-        </div>
-        <div class="col-sm">
-            <img src="assets/img/Karaoke.png" alt="">
-            <h4>$89</h4>
-        </div>
-        <div class="col-sm">
-            <img src="assets/img/Mermaid.png" alt="">
-            <h4>$35</h4>
+        <div class="col-sm" *ngFor="let item of prizeItems">
+            <h1>{{item.name}}</h1>
+            <img [src]="item.imageurl" alt="">
+            <h4>${{item.amount}}</h4>
         </div>
     </div>
 </div>

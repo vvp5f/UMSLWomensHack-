@@ -29,7 +29,6 @@ import { PrizesComponent } from './prizes/prizes.component';
     LoginComponent,
     UserComponent,
     RegisterComponent,
-    TutorialComponent,
     GamesComponent,
     DashboardComponent,
     TutorialComponent,
