@@ -20,6 +20,7 @@ import { TutorialComponent } from './tutorial/tutorial.component';
 import { GamesComponent } from './games/games.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     TutorialComponent,
     GamesComponent,
     DashboardComponent,
-    TutorialComponent
+    TutorialComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
