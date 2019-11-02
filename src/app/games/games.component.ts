@@ -6,24 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./games.component.scss']
 })
 export class GamesComponent implements OnInit {
-showImageOne: boolean=false;
-showImageTwo: boolean=false;
+  showImageOne: boolean = false;
+  showImageTwo: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
-   ;
+    ;
   }
 
-toggleGame(game: number){
-  this.showImageOne = false;
-  this.showImageTwo = false;
+  toggleGame(game: number) {
+    this.showImageOne = false;
+    this.showImageTwo = false;
 
-  if(game==1){
-    this.showImageOne = true;
+    if (game == 1) {
+      this.showImageOne = true;
+    }
+    else if (game == 2) {
+      this.showImageTwo = true;
+    }
   }
-  else if (game==2){
-    this.showImageTwo = true;
-  }
-}
 }
