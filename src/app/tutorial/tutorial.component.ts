@@ -14,7 +14,6 @@ export class TutorialComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.toggleVideo(3);
   }
 
   toggleVideo(video: number) {
