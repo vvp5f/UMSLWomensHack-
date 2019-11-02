@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
+import { GamesComponent } from './games/games.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TutorialComponent } from './tutorial/tutorial.component';
     LoginComponent,
     UserComponent,
     RegisterComponent,
-    TutorialComponent
+    TutorialComponent,
+    GamesComponent
   ],
   imports: [
     BrowserModule,
