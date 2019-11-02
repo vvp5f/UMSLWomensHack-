@@ -8,6 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { UserResolver } from './user/user.resolver';
 import { AuthGuard } from './core/auth.guard';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { PrizesComponent } from './prizes/prizes.component';
 
 export const rootRouterConfig: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -16,5 +17,6 @@ export const rootRouterConfig: Routes = [
   { path: 'user', component: UserComponent,  resolve: { data: UserResolver}},
   { path: 'tutorial', component: TutorialComponent},
   { path: 'games', component: GamesComponent},
-  {path: 'dashboard', component: DashboardComponent}
+  {path: 'dashboard', component: DashboardComponent},
+  {path: 'prizes', component: PrizesComponent}
 ];
