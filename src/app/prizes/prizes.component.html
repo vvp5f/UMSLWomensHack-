@@ -1,9 +1,14 @@
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <h1> Win Some Prizes</h1>
+    </div>
+</header>
 <div class="container" style="padding-top: 20px;">
     <div class="row">
         <div class="col-sm" *ngFor="let item of prizeItems">
             <h1>{{item.name}}</h1>
-            <img [src]="item.imageurl" alt="">
-            <h4>${{item.amount}}</h4>
+            <img [src]="item.imageurl" alt="" style="height: 200px;">
+            <h3 class="alert alert-secondary">{{item.points}} pts </h3>
         </div>
     </div>
 </div>
