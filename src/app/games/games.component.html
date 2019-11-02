@@ -1,1 +1,24 @@
-<img src="src\assets\img\Blockly.PNG" alt="">
+<header class="masthead text-center text-white">
+  <div class="masthead-content">
+    <div class="container">
+      <h1>Games</h1>
+
+      <button class="btn btn-primary btn-xl rounded-pill mt-5" (click)="toggleGame(1)">Blockly</button>
+      &nbsp;
+      <button class="btn btn-primary btn-xl rounded-pill mt-5" (click)="toggleGame(2)">Martian Hoverboards</button>
+      <br />
+      <br />
+
+      <div *ngIf="showImageOne">
+        <img height="315" src="assets\img\blockly.png" alt="Blockly Game Picture">
+      </div>
+      <div *ngIf="showImageTwo">
+        <img height="315" src="assets\img\Martian.png" alt="Martian Game Picture">
+      </div>
+    </div>
+  </div>
+  <div class="bg-circle-1 bg-circle"></div>
+  <div class="bg-circle-2 bg-circle"></div>
+  <div class="bg-circle-3 bg-circle"></div>
+  <div class="bg-circle-4 bg-circle"></div>
+</header>
