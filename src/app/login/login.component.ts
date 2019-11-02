@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AuthService } from '../core/auth.service'
 import { Router, Params } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UserService} from '../core/user.service';
 
 @Component({
   selector: 'page-login',
@@ -16,7 +17,8 @@ export class LoginComponent {
   constructor(
     public authService: AuthService,
     private router: Router,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private _userService: UserService
   ) {
     this.createForm();
   }
@@ -31,6 +33,7 @@ export class LoginComponent {
   tryFacebookLogin(){
     this.authService.doFacebookLogin()
     .then(res => {
+      this._userService.toggleLogin();
       this.router.navigate(['/user']);
     })
   }
@@ -38,6 +41,7 @@ export class LoginComponent {
   tryTwitterLogin(){
     this.authService.doTwitterLogin()
     .then(res => {
+      this._userService.toggleLogin();
       this.router.navigate(['/user']);
     })
   }
@@ -45,6 +49,7 @@ export class LoginComponent {
   tryGoogleLogin(){
     this.authService.doGoogleLogin()
     .then(res => {
+      this._userService.toggleLogin();
       this.router.navigate(['/user']);
     })
   }
@@ -52,9 +57,11 @@ export class LoginComponent {
   tryLogin(value){
     this.authService.doLogin(value)
     .then(res => {
+      this._userService.toggleLogin();
       this.router.navigate(['/user']);
     }, err => {
       console.log(err);
+
       this.errorMessage = err.message;
     })
   }

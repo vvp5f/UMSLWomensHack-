@@ -6,13 +6,24 @@ import * as firebase from 'firebase/app';
 
 @Injectable()
 export class UserService {
-
+  
   constructor(
    public db: AngularFirestore,
    public afAuth: AngularFireAuth
  ){
  }
 
+ toggleLogin()
+ {
+   console.log("LoginTriggered");
+   sessionStorage.setItem("isLoggedIn", "true");
+ }
+
+ toggleLogoff()
+ {
+  console.log("LogoffTriggered");
+  sessionStorage.setItem("isLoggedIn", "false");
+ }
 
   getCurrentUser(){
     return new Promise<any>((resolve, reject) => {
