@@ -19,6 +19,8 @@ import { AppComponent } from './app.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { GamesComponent } from './games/games.component';
 
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,9 @@ import { GamesComponent } from './games/games.component';
     UserComponent,
     RegisterComponent,
     TutorialComponent,
-    GamesComponent
+    GamesComponent,
+    DashboardComponent,
+    TutorialComponent
   ],
   imports: [
     BrowserModule,
