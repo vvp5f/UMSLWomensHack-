@@ -16,6 +16,7 @@ import { UserService } from './core/user.service';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { TutorialComponent } from './tutorial/tutorial.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 
@@ -25,8 +26,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LoginComponent,
     UserComponent,
     RegisterComponent,
-    
-    DashboardComponent
+    DashboardComponent,
+    TutorialComponent
   ],
   imports: [
     BrowserModule,
