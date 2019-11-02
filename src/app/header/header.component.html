@@ -17,7 +17,7 @@
             </li>
           </ul>
         </div>
-        <div class="nav-navbar" *ngIf="getLoggedIn() =='false'"> 
+        <div class="nav-navbar" *ngIf="getLoggedIn() !='true'"> 
             <a target="_self" class="nav-link" href="login">LOG IN</a>
         </div>
         <div class="nav-navbar" *ngIf="getLoggedIn() =='true'">
