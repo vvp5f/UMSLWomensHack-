@@ -21,6 +21,7 @@ import { GamesComponent } from './games/games.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
+import { PrizesComponent } from './prizes/prizes.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HeaderComponent } from './header/header.component';
     GamesComponent,
     DashboardComponent,
     TutorialComponent,
-    HeaderComponent
+    HeaderComponent,
+    PrizesComponent
   ],
   imports: [
     BrowserModule,
